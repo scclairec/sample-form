@@ -201,3 +201,10 @@ label {
 h2 {
   color: var(--color-text-header);
 }
+
+#commentsHere {
+  margin: 10px;
+  padding: 10px;
+  height: 30vh;
+  background-color: cornsilk;
+}
