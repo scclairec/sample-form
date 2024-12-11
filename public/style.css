@@ -207,4 +207,5 @@ h2 {
   padding: 10px;
   height: 30vh;
   background-color: cornsilk;
+  overflow: auto;
 }
