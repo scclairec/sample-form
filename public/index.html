@@ -16,28 +16,52 @@
       </h1>
 
     </header>
-    <form id="login">
-
-      <fieldset form="login">
-
+    <form id="login" method="get">
+      <fieldset>
             <legend>Things About Yourself: </legend>
             <label>Title: 
               <select id="utitle" name="utitle">
-                <o
+                <option value="Ms"> Ms.</option>
+                <option value="Mr"> Mr.</option>
+                <option value="Mrs"> Mrs.</option>
+                <option value="Dr." selected> Dr.</option>
+                <option value="Atty."> Dr.</option>
+                <option value="Engr'"> Dr.</option>       
               </select>
         
             </label>  
             <label for="userName">Name:</label>
-            <input type="text" id="userName" name="userName">
-            <label>Password: <input type="password" id="pword" name="pword"> </label>  
+            <input type="text" id="userName" name="userName" />
+              
+            <label>Password: <input type="password" id="pword" name="pword"/> </label>  
+            <br/><br/>
+        
+            <label>Gender: 
+              <input type="radio" name="gender" value="f"/> Female
+              <input type="radio" name="gender" value="m"/> Male
+              <input type="radio" name="gender" value="p" checked/> Prefer Not to Say
+            </label>  
+            <br/><br/>
+            <label>What Can : 
+              <input type="radio" name="gender" value="f"/> Female
+              <input type="radio" name="gender" value="m"/> Male
+              <input type="radio" name="gender" value="p" checked/> Prefer Not to Say
+            </label>  
+            <br/><br/>
+        
+            <label>Email: <input type="email" id="uemail" name="uemail"/> </label>  
+        
+            <label>Your website: <input type="url" id="uweb" name="uweb"/> </label>  
+            <br/><br/>
+        
+            <label>Description:<br/> 
+              <textarea id="desc" name="desc" rows="10" cols="50"> 
+              </textarea>
+            </label>  
             <br><br>
-            <label>Email: <input type="email" id="uemail" name="umail"> </label>  
-            <label>Your website: <input type="url" id="uemail" name="umail"> </label>  
-            <br><br>
-            
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"/>
 
-            <input type="reset" value="Clear">
+            <input type="reset" value="Clear"/>
 
      </fieldset>
 
