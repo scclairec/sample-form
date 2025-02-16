@@ -19,15 +19,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/process', (req, res) => {
     const formData = req.query;
     formData.gender = determineGender(formData.gender);
-    console.log(formData)
     formData.talent = determineTalent(formData.talent);
-    console.log(formData)
     res.render('pages/acceptFormData.hbs', {formData});
 })
 
 function determineGender(gender) {
   let dGender="";
-  if (gender=="f")
+  if (gender == "f")
        dGender = "Female"
   else if (gender=="m")
      dGender = "Male"
@@ -37,17 +35,17 @@ function determineGender(gender) {
 }
 
 function determineTalent(talents) {
-  let dTalents=[]
   for (let i in talents) {
-    if (talents[i] = "d")
-      dTalents[i] = "Dance"
-    else if (talents[i] = "s")
-      dTalents[i] = "Sing"
+    console.log(talents[i])
+    if (talents[i] == 'd')
+      talents[i] = "Dance"
+    else if (talents[i] == 's')
+      talents[i] = "Sing"
     else
-      dTalents[i] = "Play Instruments"
+      talents[i] = "Play Instruments"
   }
-  
-  return dTalents 
+  console.log(talents)
+  return talents 
 }
 
 
