@@ -16,7 +16,9 @@
       </h1>
 
     </header>
-    <form id="login" method="get" action="process">
+    <form id="login" method="get" action="process"
+          onsubmit="return confirm('Accept Input')"
+          onreset="return confirm('You really want it clear?')">
       <fieldset>
             <legend>Things About Yourself: </legend>
             <label>Title: 

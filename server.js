@@ -18,15 +18,37 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Sets a basic route index.hbs when website initially starts and when home is clicked from the nav bar or whenever a process needs to go back to home 
 app.get('/process', (req, res) => {
     const formData = req.query;
-    if (formData.gender=="f")
-       formData.gender = "Female"
-    else if (formData.gender=="m")
-       formData.gender = "Male"
-    else
-       formData.gender = "Prefer Not to Say"
+    formData.gender = determineGender(formData.gender);
+    console.log(formData)
+    formData.talent = determineTalent(formData.talent);
     console.log(formData)
     res.render('pages/acceptFormData.hbs', {formData});
 })
+
+function determineGender(gender) {
+  let dGender="";
+  if (gender=="f")
+       dGender = "Female"
+  else if (gender=="m")
+     dGender = "Male"
+  else
+     dGender = "Prefer Not to Say"
+  return dGender 
+}
+
+function determineTalent(talents) {
+  let dTalents=[]
+  for (let i in talents) {
+    if (talents[i] = "d")
+      dTalents[i] = "Dance"
+    else if (talents[i] = "s")
+      dTalents[i] = "Sing"
+    else
+      dTalents[i] = "Play Instruments"
+  }
+  
+  return dTalents 
+}
 
 
 // Step 5: Start HTTP Server on a port number 3000
