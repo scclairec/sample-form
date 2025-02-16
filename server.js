@@ -16,8 +16,9 @@ app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Sets a basic route index.hbs when website initially starts and when home is clicked from the nav bar or whenever a process needs to go back to home 
-app.get('/', (req, res) => {
-    res.render('index.hbs');
+app.get('/process', (req, res) => {
+    const formData = req.query;
+    res.render('acceptFormData.hbs', {formData});
 })
 
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+    <meta name="author" content="ATLMendoza">
+    <meta name="description" content="form tag and the form elements">
+    <meta name="keywords" content="form, submit, reset, input, button, textarea, fieldset, legend">
+    <meta name="revised" content="02/16/2025"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <header>
+       <h1>
+        Received Data
+      </h1>
+
+    </header>
+    <section>
+
+        <p>Title: {formData.utitle}</p>  
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" name="userName" />
+
+        <label>Password: <input type="password" id="pword" name="pword"/> </label>  
+        <br/><br/>
+
+        <label>Gender: 
+          <input type="radio" name="gender" value="f"/> Female
+          <input type="radio" name="gender" value="m"/> Male
+          <input type="radio" name="gender" value="p" checked/> Prefer Not to Say
+        </label>  
+        <br/><br/>
+        <label>Talents: 
+          <input type="checkbox" name="talent" value="d" /> Dance
+          <input type="checkbox" name="talent" value="s" /> Sing
+          <input type="checkbox" name="talent" value="p" /> Play An Instrument
+        </label>  
+        <br/><br/>
+
+        <label>Email: <input type="email" id="uemail" name="uemail"/> </label>  
+
+        <label>Your website: <input type="url" id="uweb" name="uweb"/> </label>  
+        <br/><br/>
+
+        <label>Description:<br/> 
+          <textarea id="desc" name="desc" rows="10" cols="50"> 
+          </textarea>
+        </label>  
+        <br><br>
+    </section>
+    <footer>
+      <p>
+        References:
+      </p>
+      <cite>
+       https://www.w3schools.com/html/html_forms.asp
+      </cite><br/>
+      <p>
+        Copyright @ AL Mendoza 
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
