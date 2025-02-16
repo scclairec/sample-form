@@ -18,6 +18,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //Sets a basic route index.hbs when website initially starts and when home is clicked from the nav bar or whenever a process needs to go back to home 
 app.get('/process', (req, res) => {
     const formData = req.query;
+    if (formData.gender=="f")
+       formData.gender = "Female"
+    else if (formData.gender=="m")
+       formData.gender = "Male"
+    else
+       formData.gender = "Prefer Not to Say"
+    console.log(formData)
     res.render('pages/acceptFormData.hbs', {formData});
 })
 

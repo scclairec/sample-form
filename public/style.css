@@ -138,6 +138,7 @@ p {
   margin: 2rem 0 0;
 }
 
+
 /* Very light scaling for our illustration */
 .illo-container {
   display: flex;
@@ -208,4 +209,9 @@ h2 {
   height: 30vh;
   background-color: cornsilk;
   overflow: auto;
+}
+
+span {
+  color: maroon;
+  font-weight: bold;
 }
