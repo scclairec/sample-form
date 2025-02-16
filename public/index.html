@@ -4,63 +4,51 @@
     <meta charset="utf-8">
     <title>Home page</title>
     <meta name="author" content="ATLMendoza">
-    <meta name="description" content="This is template file for your project in node.js">
-    <meta name="keywords" content="node.js, npm install, package.json">
-    <meta name="revised" content="12/12/2024"/>
+    <meta name="description" content="form tag and the form elements">
+    <meta name="keywords" content="form, submit, reset, input, button, textarea, fieldset, legend">
+    <meta name="revised" content="02/16/2025"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
      <header>
        <h1>
-        A Template for your project
+        Sample form implementation
       </h1>
-      <nav>
-        <a>Home |</a>
-        <a href="intro.html">Introduction |</a>
-        <a href="ourproject.html">Our Project</a>
-        <a href="">Sample Link</a>
 
-       </nav>
     </header>
-    <section>
+    <form id="login">
 
-      <p>
-        Please copy what is inside the files below found in this <a href="https://drive.google.com/drive/folders/1b94dwe8IqEHlAlFeI07OU7JRZAjx-DnT?usp=sharing" target="_blank">Google directory</a> into your own repository  
-      </p>
-      <ul>
-        <li>package.json </li>
-        <li>server.js </li>
-      </ul>
-      <p>
-        Please click link Terminal found below of your repository then type
-        <span style="color:blue">npm install</span> then press the Enter key.
-      </p>
-      <p>
-        All your html files, client side js files and css files should be under the public folder
-      </p>
-      <p> 
-      When you see your own index.html on the browser then you are successful in configuring node web service for your website. <span style="color:maroon">Congratulations!</span>
-      </p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/TlB_eWDSMt4?si=XZF3-SpLeX4JJBOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
-    <section>
-      <br/>
-      <label> Your Comments:
-        <input id="comments" type="text" onchange="includeComments()">
-      </label>
-      <div id="commentsHere">
-      </div>
-    </section>
+      <fieldset form="login">
+
+            <legend>Things About Yourself: </legend>
+            <label>Title: 
+              <select id="utitle" name="utitle">
+                <o
+              </select>
+        
+            </label>  
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName">
+            <label>Password: <input type="password" id="pword" name="pword"> </label>  
+            <br><br>
+            <label>Email: <input type="email" id="uemail" name="umail"> </label>  
+            <label>Your website: <input type="url" id="uemail" name="umail"> </label>  
+            <br><br>
+            
+            <input type="submit" value="Submit">
+
+            <input type="reset" value="Clear">
+
+     </fieldset>
+
+    </form>
     <footer>
       <p>
         References:
       </p>
       <cite>
-        Introduction to Node JS: https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+       https://www.w3schools.com/html/html_forms.asp
       </cite><br/>
-      <cite>
-        Installing Node JS: https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
-      </cite>
       <p>
         Copyright @ AL Mendoza 
       </p>
