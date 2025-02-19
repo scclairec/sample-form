@@ -13,7 +13,7 @@ textarea {
  
 }
 fieldset {
-  background-color: coral;
+  background-color: lightpink;
 }
 legend {
   background: purple;
@@ -23,7 +23,15 @@ legend {
 }
 input[type=submit], input[type=reset] {
   background: purple;
-  padding: 10px;
+  width: 100px;
+  padding: 2px;
   color: white;
   margin-bottom: 10px;
+}
+span {
+  color: maroon;
+}
+:focus {
+  background: lightblue;
+  text-transform: uppercase
 }
