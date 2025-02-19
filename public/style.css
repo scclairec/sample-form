@@ -215,3 +215,7 @@ span {
   color: maroon;
   font-weight: bold;
 }
+
+:focus {
+  background: lightblue;
+}
