@@ -19,14 +19,22 @@
     <form id="login" method="post" action="submit"
           onsubmit="return confirm('Accept Input')"
           onreset="return confirm('You really want it clear?')">
-      <fieldset>
+          <fieldset>
             <legend>Things About Yourself: </legend>
            <label for="sId">Student ID:</label>
             <input onblur="toUpper(this)" type="number" id="sId" name="sId"
                    placeholder="20220001" required/>
-          <label for="userName">Name:</label>
-            <input onblur="toUpper(this)" type="text" id="userName" name="userName"
-                   placeholder="LN, FN MI" required/>
+            
+            <label for="userName">Full Name:</label>
+                    <input onblur="toUpper(this)" type="text" id="userName" name="userName"
+                   placeholder="mm/dd/yyyy" required/>
+            
+            <label for="birthday">Birthday:</label>
+            <input onblur="toUpper(this)" type="date" id="bDay" name="bDay"
+                    required/>
+      </fieldset>
+      <fieldset>
+        <legend>Org Application: </legend>
             <label>Title: 
               <select id="utitle" name="utitle">
                 <optgroup label="Everyday">
