@@ -21,6 +21,10 @@ legend {
   color: white;
   margin-bottom: 10px;
 }
+:focus {
+  background: lightblue;
+  text-transform: uppercase
+}
 input[type=submit], input[type=reset] {
   background: purple;
   width: 100px;
@@ -30,8 +34,4 @@ input[type=submit], input[type=reset] {
 }
 span {
   color: maroon;
-}
-:focus {
-  background: lightblue;
-  text-transform: uppercase
 }
